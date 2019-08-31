@@ -1,0 +1,654 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Project:</h2>
+G:\大三第二学期学习资料\嵌入式大作业\ControlSystems\USER\Template.uvproj
+Project File Date:  05/24/2019
+
+<h2>Output:</h2>
+Build target 'Target 1'
+Target has no object modules
+Target not created
+compiling Delay.c...
+..\HARDWARE\Delay.c - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling DS18B20.c...
+compiling ESP8266.c...
+compiling LCD1602.c...
+compiling LED.c...
+..\HARDWARE\LED.c(1): warning C318: can't open file 'OTHER.h'
+..\HARDWARE\LED.C(8): error C141: syntax error near 'i', expected ')'
+..\HARDWARE\LED.C(10): error C141: syntax error near 'j'
+..\HARDWARE\LED.C(10): error C202: 'j': undefined identifier
+..\HARDWARE\LED.C(11): error C202: 'i': undefined identifier
+..\HARDWARE\LED.C(13): error C202: 'led': undefined identifier
+..\HARDWARE\LED.C(15): error C202: 'j': undefined identifier
+..\HARDWARE\LED.C(17): error C202: 'led': undefined identifier
+..\HARDWARE\LED.C(19): error C202: 'i': undefined identifier
+..\HARDWARE\LED.C(19): error C202: 'j': undefined identifier
+..\HARDWARE\LED.C(19): error C202: 'led': undefined identifier
+..\HARDWARE\LED.C(23): error C202: 'j': undefined identifier
+..\HARDWARE\LED.C(25): error C202: 'led': undefined identifier
+..\HARDWARE\LED.C(27): error C202: 'i': undefined identifier
+..\HARDWARE\LED.C(27): error C202: 'j': undefined identifier
+..\HARDWARE\LED.C(27): error C202: 'led': undefined identifier
+..\HARDWARE\LED.C(31): error C202: 'led': undefined identifier
+..\HARDWARE\LED.C(38): error C141: syntax error near 'i', expected ')'
+..\HARDWARE\LED.C(40): error C202: 'i': undefined identifier
+..\HARDWARE\LED.C(41): error C202: 'led': undefined identifier
+..\HARDWARE\LED.C(47): error C141: syntax error near 'i', expected ')'
+..\HARDWARE\LED.C(49): error C202: 'u16': undefined identifier
+..\HARDWARE\LED.C(49): error C141: syntax error near 'j'
+..\HARDWARE\LED.C(50): error C202: 'i': undefined identifier
+..\HARDWARE\LED.C(52): error C202: 'j': undefined identifier
+..\HARDWARE\LED.C(54): error C202: 'beep': undefined identifier
+..\HARDWARE\LED.C(60): error C129: missing ';' before 'exchange'
+compiling main.c...
+main.c(4): warning C318: can't open file 'OTHER.h'
+MAIN.C(69): warning C206: 'voice': missing function-prototype
+MAIN.C(69): error C267: 'voice': requires ANSI-style prototype
+Target not created
+compiling Delay.c...
+..\HARDWARE\Delay.c - 0 Error(s), 0 Warning(s).
+compiling DS18B20.c...
+..\HARDWARE\DS18B20.c - 0 Error(s), 0 Warning(s).
+compiling ESP8266.c...
+..\HARDWARE\ESP8266.c - 0 Error(s), 0 Warning(s).
+compiling ESP8266.c...
+..\HARDWARE\ESP8266.C(15): error C202: 'SBUF': undefined identifier
+..\HARDWARE\ESP8266.C(16): error C202: 'TI': undefined identifier
+..\HARDWARE\ESP8266.C(17): error C202: 'TI': undefined identifier
+..\HARDWARE\ESP8266.C(34): error C202: 'TMOD': undefined identifier
+..\HARDWARE\ESP8266.C(35): error C202: 'TH1': undefined identifier
+..\HARDWARE\ESP8266.C(36): error C202: 'TL1': undefined identifier
+..\HARDWARE\ESP8266.C(37): error C202: 'PCON': undefined identifier
+..\HARDWARE\ESP8266.C(38): error C202: 'SCON': undefined identifier
+..\HARDWARE\ESP8266.C(39): error C202: 'EA': undefined identifier
+..\HARDWARE\ESP8266.C(40): error C202: 'ES': undefined identifier
+..\HARDWARE\ESP8266.C(41): error C202: 'TR1': undefined identifier
+..\HARDWARE\ESP8266.C(50): error C202: 'TI': undefined identifier
+..\HARDWARE\ESP8266.c - 12 Error(s), 0 Warning(s).
+compiling ESP8266.c...
+..\HARDWARE\ESP8266.c - 0 Error(s), 0 Warning(s).
+compiling ESP8266.c...
+..\HARDWARE\ESP8266.H(7): error C141: syntax error near '*', expected ')'
+..\HARDWARE\ESP8266.c - 1 Error(s), 0 Warning(s).
+compiling ESP8266.c...
+..\HARDWARE\DELAY.H(12): warning C235: parameter 1: different types
+..\HARDWARE\ESP8266.C(12): warning C235: parameter 1: different types
+..\HARDWARE\ESP8266.c - 0 Error(s), 2 Warning(s).
+compiling ESP8266.c...
+..\HARDWARE\DELAY.H(12): warning C235: parameter 1: different types
+..\HARDWARE\ESP8266.C(12): warning C235: parameter 1: different types
+..\HARDWARE\ESP8266.c - 0 Error(s), 2 Warning(s).
+compiling ESP8266.c...
+..\HARDWARE\ESP8266.C(12): warning C235: parameter 1: different types
+..\HARDWARE\ESP8266.c - 0 Error(s), 1 Warning(s).
+compiling ESP8266.c...
+..\HARDWARE\ESP8266.C(12): warning C235: parameter 1: different types
+..\HARDWARE\ESP8266.c - 0 Error(s), 1 Warning(s).
+Build target 'Target 1'
+compiling Delay.c...
+compiling DS18B20.c...
+compiling ESP8266.c...
+compiling LCD1602.c...
+compiling LED.c...
+compiling main.c...
+main.c(4): warning C318: can't open file 'OTHER.h'
+MAIN.C(69): warning C206: 'voice': missing function-prototype
+MAIN.C(69): error C267: 'voice': requires ANSI-style prototype
+Target not created
+compiling ESP8266.c...
+..\HARDWARE\ESP8266.c - 0 Error(s), 0 Warning(s).
+compiling ESP8266.c...
+..\HARDWARE\ESP8266.H(8): error C141: syntax error near '*', expected ')'
+..\HARDWARE\ESP8266.c - 1 Error(s), 0 Warning(s).
+compiling ESP8266.c...
+..\HARDWARE\ESP8266.H(9): error C141: syntax error near '*', expected ')'
+..\HARDWARE\ESP8266.c - 1 Error(s), 0 Warning(s).
+compiling ESP8266.c...
+..\HARDWARE\ESP8266.H(8): error C141: syntax error near '*', expected ')'
+..\HARDWARE\ESP8266.c - 1 Error(s), 0 Warning(s).
+compiling ESP8266.c...
+..\HARDWARE\ESP8266.H(8): error C141: syntax error near '*', expected ')'
+..\HARDWARE\ESP8266.c - 1 Error(s), 0 Warning(s).
+compiling ESP8266.c...
+..\HARDWARE\ESP8266.c - 0 Error(s), 0 Warning(s).
+compiling ESP8266.c...
+..\HARDWARE\ESP8266.c - 0 Error(s), 0 Warning(s).
+compiling ESP8266.c...
+..\HARDWARE\ESP8266.c - 0 Error(s), 0 Warning(s).
+compiling Delay.c...
+..\HARDWARE\DELAY.C(5): error C202: 'u16x': undefined identifier
+..\HARDWARE\DELAY.C(8): error C202: 'x': undefined identifier
+..\HARDWARE\Delay.c - 2 Error(s), 0 Warning(s).
+compiling Delay.c...
+..\HARDWARE\DELAY.C(8): error C202: 'x': undefined identifier
+..\HARDWARE\Delay.c - 1 Error(s), 0 Warning(s).
+compiling Delay.c...
+..\HARDWARE\Delay.c - 0 Error(s), 0 Warning(s).
+compiling ESP8266.c...
+..\HARDWARE\ESP8266.c - 0 Error(s), 0 Warning(s).
+compiling DS18B20.c...
+..\HARDWARE\DS18B20.c - 0 Error(s), 0 Warning(s).
+compiling DS18B20.c...
+..\HARDWARE\DS18B20.c - 0 Error(s), 0 Warning(s).
+compiling LCD1602.c...
+..\HARDWARE\LCD1602.c - 0 Error(s), 0 Warning(s).
+compiling LED.c...
+..\HARDWARE\LED.c - 0 Error(s), 0 Warning(s).
+compiling ESP8266.c...
+..\HARDWARE\ESP8266.c - 0 Error(s), 0 Warning(s).
+compiling main.c...
+MAIN.C(45): warning C206: 'DataExchange': missing function-prototype
+MAIN.C(45): error C267: 'DataExchange': requires ANSI-style prototype
+MAIN.C(48): error C202: 'DisplayData': undefined identifier
+main.c - 2 Error(s), 1 Warning(s).
+compiling main.c...
+D:\KEIL\C51\INC\INTRINS.H(12): error C158: '_DataExchange': function contains unnamed parameter
+D:\KEIL\C51\INC\INTRINS.H(12): error C158: '_DataExchange': function contains unnamed parameter
+D:\KEIL\C51\INC\INTRINS.H(12): error C158: '_DataExchange': function contains unnamed parameter
+D:\KEIL\C51\INC\INTRINS.H(12): error C127: '__nop_': invalid storage class
+D:\KEIL\C51\INC\INTRINS.H(13): error C127: '__testbit_': invalid storage class
+D:\KEIL\C51\INC\INTRINS.H(14): error C127: '__cror_': invalid storage class
+D:\KEIL\C51\INC\INTRINS.H(15): error C127: '__iror_': invalid storage class
+D:\KEIL\C51\INC\INTRINS.H(16): error C127: '__lror_': invalid storage class
+D:\KEIL\C51\INC\INTRINS.H(17): error C127: '__crol_': invalid storage class
+D:\KEIL\C51\INC\INTRINS.H(18): error C127: '__irol_': invalid storage class
+D:\KEIL\C51\INC\INTRINS.H(19): error C127: '__lrol_': invalid storage class
+D:\KEIL\C51\INC\INTRINS.H(20): error C127: '__chkfloat_': invalid storage class
+D:\KEIL\C51\INC\INTRINS.H(21): error C127: '__push_': invalid storage class
+D:\KEIL\C51\INC\INTRINS.H(22): error C127: '__pop_': invalid storage class
+..\HARDWARE\LED.H(9): error C141: syntax error near 'sbit'
+main.c - 15 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling DS18B20.c...
+..\HARDWARE\DS18B20.C(7): error C158: '_DataExchange': function contains unnamed parameter
+..\HARDWARE\DS18B20.C(7): error C158: '_DataExchange': function contains unnamed parameter
+..\HARDWARE\DS18B20.C(7): error C158: '_DataExchange': function contains unnamed parameter
+..\HARDWARE\DS18B20.C(8): error C132: 'Ds18b20Init': not in formal parameter list
+..\HARDWARE\DS18B20.C(8): error C141: syntax error near '{'
+..\HARDWARE\DS18B20.C(9): error C136: 'i': 'void' on variable
+..\HARDWARE\DS18B20.C(9): error C132: 'i': not in formal parameter list
+..\HARDWARE\DS18B20.C(10): error C244: 'DSPORT': can't initialize, bad type or class
+..\HARDWARE\DS18B20.C(10): error C132: 'DSPORT': not in formal parameter list
+..\HARDWARE\DS18B20.C(11): error C244: 'i': can't initialize, bad type or class
+..\HARDWARE\DS18B20.C(11): error C132: 'i': not in formal parameter list
+..\HARDWARE\DS18B20.C(12): error C141: syntax error near 'while'
+..\HARDWARE\DS18B20.C(12): error C141: syntax error near '--', expected ')'
+..\HARDWARE\DS18B20.C(13): error C231: 'DSPORT': redefinition
+..\HARDWARE\DS18B20.C(13): error C231: 'DSPORT': redefinition
+..\HARDWARE\DS18B20.C(14): error C141: syntax error near '5'
+..\HARDWARE\DS18B20.C(14): error C231: '_delay1ms': redefinition
+..\HARDWARE\DS18B20.C(15): error C141: syntax error near '}'
+..\HARDWARE\DS18B20.C(118): error C202: 'DisplayData': undefined identifier
+..\HARDWARE\DS18B20.C(118): error C202: 'DisplayData': undefined identifier
+compiling ESP8266.c...
+compiling LCD1602.c...
+compiling main.c...
+D:\KEIL\C51\INC\INTRINS.H(12): error C158: '_DataExchange': function contains unnamed parameter
+D:\KEIL\C51\INC\INTRINS.H(12): error C158: '_DataExchange': function contains unnamed parameter
+D:\KEIL\C51\INC\INTRINS.H(12): error C158: '_DataExchange': function contains unnamed parameter
+D:\KEIL\C51\INC\INTRINS.H(12): error C127: '__nop_': invalid storage class
+D:\KEIL\C51\INC\INTRINS.H(13): error C127: '__testbit_': invalid storage class
+D:\KEIL\C51\INC\INTRINS.H(14): error C127: '__cror_': invalid storage class
+D:\KEIL\C51\INC\INTRINS.H(15): error C127: '__iror_': invalid storage class
+D:\KEIL\C51\INC\INTRINS.H(16): error C127: '__lror_': invalid storage class
+D:\KEIL\C51\INC\INTRINS.H(17): error C127: '__crol_': invalid storage class
+D:\KEIL\C51\INC\INTRINS.H(18): error C127: '__irol_': invalid storage class
+D:\KEIL\C51\INC\INTRINS.H(19): error C127: '__lrol_': invalid storage class
+D:\KEIL\C51\INC\INTRINS.H(20): error C127: '__chkfloat_': invalid storage class
+D:\KEIL\C51\INC\INTRINS.H(21): error C127: '__push_': invalid storage class
+D:\KEIL\C51\INC\INTRINS.H(22): error C127: '__pop_': invalid storage class
+..\HARDWARE\LED.H(9): error C141: syntax error near 'sbit'
+Target not created
+compiling main.c...
+D:\KEIL\C51\INC\INTRINS.H(12): error C158: '_DataExchange': function contains unnamed parameter
+D:\KEIL\C51\INC\INTRINS.H(12): error C158: '_DataExchange': function contains unnamed parameter
+D:\KEIL\C51\INC\INTRINS.H(12): error C158: '_DataExchange': function contains unnamed parameter
+D:\KEIL\C51\INC\INTRINS.H(12): error C127: '__nop_': invalid storage class
+D:\KEIL\C51\INC\INTRINS.H(13): error C127: '__testbit_': invalid storage class
+D:\KEIL\C51\INC\INTRINS.H(14): error C127: '__cror_': invalid storage class
+D:\KEIL\C51\INC\INTRINS.H(15): error C127: '__iror_': invalid storage class
+D:\KEIL\C51\INC\INTRINS.H(16): error C127: '__lror_': invalid storage class
+D:\KEIL\C51\INC\INTRINS.H(17): error C127: '__crol_': invalid storage class
+D:\KEIL\C51\INC\INTRINS.H(18): error C127: '__irol_': invalid storage class
+D:\KEIL\C51\INC\INTRINS.H(19): error C127: '__lrol_': invalid storage class
+D:\KEIL\C51\INC\INTRINS.H(20): error C127: '__chkfloat_': invalid storage class
+D:\KEIL\C51\INC\INTRINS.H(21): error C127: '__push_': invalid storage class
+D:\KEIL\C51\INC\INTRINS.H(22): error C127: '__pop_': invalid storage class
+..\HARDWARE\LED.H(9): error C141: syntax error near 'sbit'
+main.c - 15 Error(s), 0 Warning(s).
+compiling main.c...
+D:\KEIL\C51\INC\INTRINS.H(12): error C158: '_DataExchange': function contains unnamed parameter
+D:\KEIL\C51\INC\INTRINS.H(12): error C158: '_DataExchange': function contains unnamed parameter
+D:\KEIL\C51\INC\INTRINS.H(12): error C158: '_DataExchange': function contains unnamed parameter
+D:\KEIL\C51\INC\INTRINS.H(12): error C127: '__nop_': invalid storage class
+D:\KEIL\C51\INC\INTRINS.H(13): error C127: '__testbit_': invalid storage class
+D:\KEIL\C51\INC\INTRINS.H(14): error C127: '__cror_': invalid storage class
+D:\KEIL\C51\INC\INTRINS.H(15): error C127: '__iror_': invalid storage class
+D:\KEIL\C51\INC\INTRINS.H(16): error C127: '__lror_': invalid storage class
+D:\KEIL\C51\INC\INTRINS.H(17): error C127: '__crol_': invalid storage class
+D:\KEIL\C51\INC\INTRINS.H(18): error C127: '__irol_': invalid storage class
+D:\KEIL\C51\INC\INTRINS.H(19): error C127: '__lrol_': invalid storage class
+D:\KEIL\C51\INC\INTRINS.H(20): error C127: '__chkfloat_': invalid storage class
+D:\KEIL\C51\INC\INTRINS.H(21): error C127: '__push_': invalid storage class
+D:\KEIL\C51\INC\INTRINS.H(22): error C127: '__pop_': invalid storage class
+..\HARDWARE\LED.H(10): error C141: syntax error near 'sbit'
+main.c - 15 Error(s), 0 Warning(s).
+compiling main.c...
+D:\KEIL\C51\INC\INTRINS.H(12): error C158: '_DataExchange': function contains unnamed parameter
+D:\KEIL\C51\INC\INTRINS.H(12): error C158: '_DataExchange': function contains unnamed parameter
+D:\KEIL\C51\INC\INTRINS.H(12): error C158: '_DataExchange': function contains unnamed parameter
+D:\KEIL\C51\INC\INTRINS.H(12): error C127: '__nop_': invalid storage class
+D:\KEIL\C51\INC\INTRINS.H(13): error C127: '__testbit_': invalid storage class
+D:\KEIL\C51\INC\INTRINS.H(14): error C127: '__cror_': invalid storage class
+D:\KEIL\C51\INC\INTRINS.H(15): error C127: '__iror_': invalid storage class
+D:\KEIL\C51\INC\INTRINS.H(16): error C127: '__lror_': invalid storage class
+D:\KEIL\C51\INC\INTRINS.H(17): error C127: '__crol_': invalid storage class
+D:\KEIL\C51\INC\INTRINS.H(18): error C127: '__irol_': invalid storage class
+D:\KEIL\C51\INC\INTRINS.H(19): error C127: '__lrol_': invalid storage class
+D:\KEIL\C51\INC\INTRINS.H(20): error C127: '__chkfloat_': invalid storage class
+D:\KEIL\C51\INC\INTRINS.H(21): error C127: '__push_': invalid storage class
+D:\KEIL\C51\INC\INTRINS.H(22): error C127: '__pop_': invalid storage class
+..\HARDWARE\LED.H(10): error C141: syntax error near 'sbit'
+main.c - 15 Error(s), 0 Warning(s).
+compiling main.c...
+D:\KEIL\C51\INC\INTRINS.H(12): error C158: '_DataExchange': function contains unnamed parameter
+D:\KEIL\C51\INC\INTRINS.H(12): error C158: '_DataExchange': function contains unnamed parameter
+D:\KEIL\C51\INC\INTRINS.H(12): error C158: '_DataExchange': function contains unnamed parameter
+D:\KEIL\C51\INC\INTRINS.H(12): error C127: '__nop_': invalid storage class
+D:\KEIL\C51\INC\INTRINS.H(13): error C127: '__testbit_': invalid storage class
+D:\KEIL\C51\INC\INTRINS.H(14): error C127: '__cror_': invalid storage class
+D:\KEIL\C51\INC\INTRINS.H(15): error C127: '__iror_': invalid storage class
+D:\KEIL\C51\INC\INTRINS.H(16): error C127: '__lror_': invalid storage class
+D:\KEIL\C51\INC\INTRINS.H(17): error C127: '__crol_': invalid storage class
+D:\KEIL\C51\INC\INTRINS.H(18): error C127: '__irol_': invalid storage class
+D:\KEIL\C51\INC\INTRINS.H(19): error C127: '__lrol_': invalid storage class
+D:\KEIL\C51\INC\INTRINS.H(20): error C127: '__chkfloat_': invalid storage class
+D:\KEIL\C51\INC\INTRINS.H(21): error C127: '__push_': invalid storage class
+D:\KEIL\C51\INC\INTRINS.H(22): error C127: '__pop_': invalid storage class
+..\HARDWARE\LED.H(10): error C141: syntax error near 'sbit'
+main.c - 15 Error(s), 0 Warning(s).
+compiling main.c...
+D:\KEIL\C51\INC\INTRINS.H(12): error C158: '_DataExchange': function contains unnamed parameter
+D:\KEIL\C51\INC\INTRINS.H(12): error C158: '_DataExchange': function contains unnamed parameter
+D:\KEIL\C51\INC\INTRINS.H(12): error C158: '_DataExchange': function contains unnamed parameter
+D:\KEIL\C51\INC\INTRINS.H(12): error C127: '__nop_': invalid storage class
+D:\KEIL\C51\INC\INTRINS.H(13): error C127: '__testbit_': invalid storage class
+D:\KEIL\C51\INC\INTRINS.H(14): error C127: '__cror_': invalid storage class
+D:\KEIL\C51\INC\INTRINS.H(15): error C127: '__iror_': invalid storage class
+D:\KEIL\C51\INC\INTRINS.H(16): error C127: '__lror_': invalid storage class
+D:\KEIL\C51\INC\INTRINS.H(17): error C127: '__crol_': invalid storage class
+D:\KEIL\C51\INC\INTRINS.H(18): error C127: '__irol_': invalid storage class
+D:\KEIL\C51\INC\INTRINS.H(19): error C127: '__lrol_': invalid storage class
+D:\KEIL\C51\INC\INTRINS.H(20): error C127: '__chkfloat_': invalid storage class
+D:\KEIL\C51\INC\INTRINS.H(21): error C127: '__push_': invalid storage class
+D:\KEIL\C51\INC\INTRINS.H(22): error C127: '__pop_': invalid storage class
+..\HARDWARE\LED.H(9): error C141: syntax error near 'sbit'
+main.c - 15 Error(s), 0 Warning(s).
+compiling main.c...
+MAIN.C(6): error C158: '_DataExchange': function contains unnamed parameter
+MAIN.C(6): error C158: '_DataExchange': function contains unnamed parameter
+MAIN.C(6): error C158: '_DataExchange': function contains unnamed parameter
+MAIN.C(6): error C244: 'Display': can't initialize, bad type or class
+MAIN.C(6): error C132: 'Display': not in formal parameter list
+MAIN.C(7): error C132: 'receive': not in formal parameter list
+MAIN.C(10): error C132: 'num': not in formal parameter list
+MAIN.C(11): error C244: 'i': can't initialize, bad type or class
+MAIN.C(11): error C132: 'i': not in formal parameter list
+MAIN.C(11): error C244: 'j': can't initialize, bad type or class
+MAIN.C(11): error C132: 'j': not in formal parameter list
+MAIN.C(14): error C244: 'start': can't initialize, bad type or class
+MAIN.C(14): error C132: 'start': not in formal parameter list
+MAIN.C(15): error C244: 'len': can't initialize, bad type or class
+MAIN.C(15): error C132: 'len': not in formal parameter list
+MAIN.C(18): error C127: 'btn1': invalid storage class
+MAIN.C(18): error C127: 'btn2': invalid storage class
+MAIN.C(18): error C127: 'btn3': invalid storage class
+MAIN.C(18): error C127: 'btn4': invalid storage class
+MAIN.C(18): error C127: 'btn5': invalid storage class
+MAIN.C(18): error C127: 'btn6': invalid storage class
+MAIN.C(18): error C127: 'btn7': invalid storage class
+MAIN.C(18): error C127: 'btn8': invalid storage class
+MAIN.C(18): error C127: 'btn9': invalid storage class
+MAIN.C(25): error C132: '_SendToPhone': not in formal parameter list
+MAIN.C(25): error C141: syntax error near '{'
+MAIN.C(28): error C132: 'dat': not in formal parameter list
+MAIN.C(29): error C132: '_SendData': not in formal parameter list
+MAIN.C(30): error C132: '_SendData': not in formal parameter list
+MAIN.C(31): error C244: 'num': can't initialize, bad type or class
+MAIN.C(31): error C132: 'num': not in formal parameter list
+MAIN.C(31): error C244: 'num': can't initialize, bad type or class
+MAIN.C(31): error C132: 'num': not in formal parameter list
+MAIN.C(32): error C244: 'dat': can't initialize, bad type or class
+MAIN.C(32): error C202: 'num': undefined identifier
+MAIN.C(32): error C132: 'dat': not in formal parameter list
+MAIN.C(33): error C132: '_SendData': not in formal parameter list
+MAIN.C(34): error C141: syntax error near '}'
+main.c - 38 Error(s), 0 Warning(s).
+compiling main.c...
+MAIN.C(6): error C158: '_DataExchange': function contains unnamed parameter
+MAIN.C(6): error C158: '_DataExchange': function contains unnamed parameter
+MAIN.C(6): error C158: '_DataExchange': function contains unnamed parameter
+MAIN.C(6): error C244: 'Display': can't initialize, bad type or class
+MAIN.C(6): error C132: 'Display': not in formal parameter list
+MAIN.C(7): error C132: 'receive': not in formal parameter list
+MAIN.C(10): error C132: 'num': not in formal parameter list
+MAIN.C(11): error C244: 'i': can't initialize, bad type or class
+MAIN.C(11): error C132: 'i': not in formal parameter list
+MAIN.C(11): error C244: 'j': can't initialize, bad type or class
+MAIN.C(11): error C132: 'j': not in formal parameter list
+MAIN.C(14): error C244: 'start': can't initialize, bad type or class
+MAIN.C(14): error C132: 'start': not in formal parameter list
+MAIN.C(15): error C244: 'len': can't initialize, bad type or class
+MAIN.C(15): error C132: 'len': not in formal parameter list
+MAIN.C(18): error C127: 'btn1': invalid storage class
+MAIN.C(18): error C127: 'btn2': invalid storage class
+MAIN.C(18): error C127: 'btn3': invalid storage class
+MAIN.C(18): error C127: 'btn4': invalid storage class
+MAIN.C(18): error C127: 'btn5': invalid storage class
+MAIN.C(18): error C127: 'btn6': invalid storage class
+MAIN.C(18): error C127: 'btn7': invalid storage class
+MAIN.C(18): error C127: 'btn8': invalid storage class
+MAIN.C(18): error C127: 'btn9': invalid storage class
+MAIN.C(25): error C132: '_SendToPhone': not in formal parameter list
+MAIN.C(25): error C141: syntax error near '{'
+MAIN.C(28): error C132: 'dat': not in formal parameter list
+MAIN.C(29): error C132: '_SendData': not in formal parameter list
+MAIN.C(30): error C132: '_SendData': not in formal parameter list
+MAIN.C(31): error C244: 'num': can't initialize, bad type or class
+MAIN.C(31): error C132: 'num': not in formal parameter list
+MAIN.C(31): error C244: 'num': can't initialize, bad type or class
+MAIN.C(31): error C132: 'num': not in formal parameter list
+MAIN.C(32): error C244: 'dat': can't initialize, bad type or class
+MAIN.C(32): error C202: 'num': undefined identifier
+MAIN.C(32): error C132: 'dat': not in formal parameter list
+MAIN.C(33): error C132: '_SendData': not in formal parameter list
+MAIN.C(34): error C141: syntax error near '}'
+main.c - 38 Error(s), 0 Warning(s).
+compiling main.c...
+MAIN.C(6): error C158: '_DataExchange': function contains unnamed parameter
+MAIN.C(6): error C158: '_DataExchange': function contains unnamed parameter
+MAIN.C(6): error C158: '_DataExchange': function contains unnamed parameter
+MAIN.C(6): error C244: 'DisplayData': can't initialize, bad type or class
+MAIN.C(6): error C132: 'DisplayData': not in formal parameter list
+MAIN.C(7): error C132: 'receive': not in formal parameter list
+MAIN.C(10): error C132: 'num': not in formal parameter list
+MAIN.C(11): error C244: 'i': can't initialize, bad type or class
+MAIN.C(11): error C132: 'i': not in formal parameter list
+MAIN.C(11): error C244: 'j': can't initialize, bad type or class
+MAIN.C(11): error C132: 'j': not in formal parameter list
+MAIN.C(14): error C244: 'start': can't initialize, bad type or class
+MAIN.C(14): error C132: 'start': not in formal parameter list
+MAIN.C(15): error C244: 'len': can't initialize, bad type or class
+MAIN.C(15): error C132: 'len': not in formal parameter list
+MAIN.C(18): error C127: 'btn1': invalid storage class
+MAIN.C(18): error C127: 'btn2': invalid storage class
+MAIN.C(18): error C127: 'btn3': invalid storage class
+MAIN.C(18): error C127: 'btn4': invalid storage class
+MAIN.C(18): error C127: 'btn5': invalid storage class
+MAIN.C(18): error C127: 'btn6': invalid storage class
+MAIN.C(18): error C127: 'btn7': invalid storage class
+MAIN.C(18): error C127: 'btn8': invalid storage class
+MAIN.C(18): error C127: 'btn9': invalid storage class
+MAIN.C(25): error C132: '_SendToPhone': not in formal parameter list
+MAIN.C(25): error C141: syntax error near '{'
+MAIN.C(28): error C132: 'dat': not in formal parameter list
+MAIN.C(29): error C132: '_SendData': not in formal parameter list
+MAIN.C(30): error C132: '_SendData': not in formal parameter list
+MAIN.C(31): error C244: 'num': can't initialize, bad type or class
+MAIN.C(31): error C132: 'num': not in formal parameter list
+MAIN.C(31): error C244: 'num': can't initialize, bad type or class
+MAIN.C(31): error C132: 'num': not in formal parameter list
+MAIN.C(32): error C244: 'dat': can't initialize, bad type or class
+MAIN.C(32): error C202: 'num': undefined identifier
+MAIN.C(32): error C132: 'dat': not in formal parameter list
+MAIN.C(33): error C132: '_SendData': not in formal parameter list
+MAIN.C(34): error C141: syntax error near '}'
+main.c - 38 Error(s), 0 Warning(s).
+compiling DS18B20.c...
+..\HARDWARE\DS18B20.C(7): error C158: '_DataExchange': function contains unnamed parameter
+..\HARDWARE\DS18B20.C(7): error C158: '_DataExchange': function contains unnamed parameter
+..\HARDWARE\DS18B20.C(7): error C158: '_DataExchange': function contains unnamed parameter
+..\HARDWARE\DS18B20.C(8): error C132: 'Ds18b20Init': not in formal parameter list
+..\HARDWARE\DS18B20.C(8): error C141: syntax error near '{'
+..\HARDWARE\DS18B20.C(9): error C136: 'i': 'void' on variable
+..\HARDWARE\DS18B20.C(9): error C132: 'i': not in formal parameter list
+..\HARDWARE\DS18B20.C(10): error C244: 'DSPORT': can't initialize, bad type or class
+..\HARDWARE\DS18B20.C(10): error C132: 'DSPORT': not in formal parameter list
+..\HARDWARE\DS18B20.C(11): error C244: 'i': can't initialize, bad type or class
+..\HARDWARE\DS18B20.C(11): error C132: 'i': not in formal parameter list
+..\HARDWARE\DS18B20.C(12): error C141: syntax error near 'while'
+..\HARDWARE\DS18B20.C(12): error C141: syntax error near '--', expected ')'
+..\HARDWARE\DS18B20.C(13): error C231: 'DSPORT': redefinition
+..\HARDWARE\DS18B20.C(13): error C231: 'DSPORT': redefinition
+..\HARDWARE\DS18B20.C(14): error C141: syntax error near '5'
+..\HARDWARE\DS18B20.C(14): error C231: '_delay1ms': redefinition
+..\HARDWARE\DS18B20.C(15): error C141: syntax error near '}'
+..\HARDWARE\DS18B20.C(118): error C202: 'DisplayData': undefined identifier
+..\HARDWARE\DS18B20.C(118): error C202: 'DisplayData': undefined identifier
+..\HARDWARE\DS18B20.c - 20 Error(s), 0 Warning(s).
+compiling DS18B20.c...
+..\HARDWARE\DS18B20.c - 0 Error(s), 0 Warning(s).
+compiling main.c...
+MAIN.C(78): warning C206: 'voice': missing function-prototype
+MAIN.C(78): error C267: 'voice': requires ANSI-style prototype
+main.c - 1 Error(s), 1 Warning(s).
+compiling main.c...
+main.c - 0 Error(s), 0 Warning(s).
+compiling main.c...
+MAIN.C(76): error C202: 'DisplayData': undefined identifier
+main.c - 1 Error(s), 0 Warning(s).
+compiling main.c...
+main.c - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling LED.c...
+compiling main.c...
+linking...
+Program Size: data=91.0 xdata=0 code=2370
+creating hex file from "..\OBJ\Template"...
+"..\OBJ\Template" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling Delay.c...
+compiling DS18B20.c...
+compiling ESP8266.c...
+compiling LCD1602.c...
+compiling LED.c...
+compiling main.c...
+linking...
+Program Size: data=91.0 xdata=0 code=2370
+creating hex file from "..\OBJ\Template"...
+"..\OBJ\Template" - 0 Error(s), 0 Warning(s).
+compiling main.c...
+main.c - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+linking...
+Program Size: data=91.0 xdata=0 code=2380
+creating hex file from "..\OBJ\Template"...
+"..\OBJ\Template" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling Delay.c...
+compiling DS18B20.c...
+compiling ESP8266.c...
+compiling LCD1602.c...
+compiling LED.c...
+compiling main.c...
+linking...
+Program Size: data=91.0 xdata=0 code=2380
+creating hex file from "..\OBJ\Template"...
+"..\OBJ\Template" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling Delay.c...
+compiling DS18B20.c...
+compiling ESP8266.c...
+compiling LCD1602.c...
+compiling LED.c...
+compiling main.c...
+linking...
+Program Size: data=91.0 xdata=0 code=2380
+creating hex file from "..\OBJ\Template"...
+"..\OBJ\Template" - 0 Error(s), 0 Warning(s).
+compiling main.c...
+main.c - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+linking...
+Program Size: data=91.0 xdata=0 code=2380
+creating hex file from "..\OBJ\Template"...
+"..\OBJ\Template" - 0 Error(s), 0 Warning(s).
+compiling main.c...
+main.c - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+linking...
+Program Size: data=96.0 xdata=0 code=2385
+creating hex file from "..\OBJ\Template"...
+"..\OBJ\Template" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling Delay.c...
+compiling DS18B20.c...
+compiling ESP8266.c...
+compiling LCD1602.c...
+compiling LED.c...
+compiling main.c...
+linking...
+Program Size: data=96.0 xdata=0 code=2385
+creating hex file from "..\OBJ\Template"...
+"..\OBJ\Template" - 0 Error(s), 0 Warning(s).
+compiling main.c...
+main.c - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+linking...
+Program Size: data=96.0 xdata=0 code=2385
+creating hex file from "..\OBJ\Template"...
+"..\OBJ\Template" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling Delay.c...
+compiling DS18B20.c...
+compiling ESP8266.c...
+compiling LCD1602.c...
+compiling LED.c...
+compiling main.c...
+linking...
+Program Size: data=96.0 xdata=0 code=2385
+creating hex file from "..\OBJ\Template"...
+"..\OBJ\Template" - 0 Error(s), 0 Warning(s).
+compiling main.c...
+main.c - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+linking...
+Program Size: data=96.0 xdata=0 code=2382
+creating hex file from "..\OBJ\Template"...
+"..\OBJ\Template" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling Delay.c...
+compiling DS18B20.c...
+compiling ESP8266.c...
+compiling LCD1602.c...
+compiling LED.c...
+compiling main.c...
+linking...
+Program Size: data=96.0 xdata=0 code=2382
+creating hex file from "..\OBJ\Template"...
+"..\OBJ\Template" - 0 Error(s), 0 Warning(s).
+compiling LCD1602.c...
+..\HARDWARE\LCD1602.c - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+linking...
+Program Size: data=96.0 xdata=0 code=2382
+creating hex file from "..\OBJ\Template"...
+"..\OBJ\Template" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling Delay.c...
+compiling DS18B20.c...
+compiling ESP8266.c...
+compiling LCD1602.c...
+compiling LED.c...
+compiling main.c...
+linking...
+Program Size: data=96.0 xdata=0 code=2382
+creating hex file from "..\OBJ\Template"...
+"..\OBJ\Template" - 0 Error(s), 0 Warning(s).
+compiling main.c...
+main.c - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling LCD1602.c...
+compiling main.c...
+linking...
+Program Size: data=96.0 xdata=0 code=2382
+creating hex file from "..\OBJ\Template"...
+"..\OBJ\Template" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling Delay.c...
+compiling DS18B20.c...
+compiling ESP8266.c...
+compiling LCD1602.c...
+compiling LED.c...
+compiling main.c...
+linking...
+Program Size: data=96.0 xdata=0 code=2382
+creating hex file from "..\OBJ\Template"...
+"..\OBJ\Template" - 0 Error(s), 0 Warning(s).
+compiling main.c...
+main.c - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+linking...
+Program Size: data=96.0 xdata=0 code=2382
+creating hex file from "..\OBJ\Template"...
+"..\OBJ\Template" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling Delay.c...
+compiling DS18B20.c...
+compiling ESP8266.c...
+compiling LCD1602.c...
+compiling LED.c...
+compiling main.c...
+linking...
+Program Size: data=96.0 xdata=0 code=2382
+creating hex file from "..\OBJ\Template"...
+"..\OBJ\Template" - 0 Error(s), 0 Warning(s).
+compiling main.c...
+main.c - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+linking...
+Program Size: data=96.0 xdata=0 code=2382
+creating hex file from "..\OBJ\Template"...
+"..\OBJ\Template" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling Delay.c...
+compiling DS18B20.c...
+compiling ESP8266.c...
+compiling LCD1602.c...
+compiling LED.c...
+compiling main.c...
+linking...
+Program Size: data=96.0 xdata=0 code=2382
+creating hex file from "..\OBJ\Template"...
+"..\OBJ\Template" - 0 Error(s), 0 Warning(s).
+compiling main.c...
+main.c - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+linking...
+Program Size: data=96.0 xdata=0 code=2382
+creating hex file from "..\OBJ\Template"...
+"..\OBJ\Template" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling Delay.c...
+compiling DS18B20.c...
+compiling ESP8266.c...
+compiling LCD1602.c...
+compiling LED.c...
+compiling main.c...
+linking...
+Program Size: data=96.0 xdata=0 code=2382
+creating hex file from "..\OBJ\Template"...
+"..\OBJ\Template" - 0 Error(s), 0 Warning(s).

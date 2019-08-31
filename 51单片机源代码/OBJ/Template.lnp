@@ -1,0 +1,8 @@
+"..\OBJ\Delay.obj",
+"..\OBJ\DS18B20.obj",
+"..\OBJ\ESP8266.obj",
+"..\OBJ\LCD1602.obj",
+"..\OBJ\LED.obj",
+"..\OBJ\main.obj" 
+TO "..\OBJ\Template" 
+PRINT(".\Template.m51") RAMSIZE(256) 

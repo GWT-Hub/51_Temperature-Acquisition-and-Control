@@ -1,0 +1,77 @@
+C51 COMPILER V9.01   ESP8266                                                               06/03/2019 13:50:10 PAGE 1   
+
+
+C51 COMPILER V9.01, COMPILATION OF MODULE ESP8266
+OBJECT MODULE PLACED IN ..\OBJ\ESP8266.obj
+COMPILER INVOKED BY: D:\keil\C51\BIN\C51.EXE ..\HARDWARE\ESP8266.c BROWSE INCDIR(..\HARDWARE;..\HARDWARE) DEBUG OBJECTEX
+                    -TEND PRINT(.\ESP8266.lst) OBJECT(..\OBJ\ESP8266.obj)
+
+line level    source
+
+   1          #include "ESP8266.h"
+   2          
+   3          u8 *mux="AT+CIPMUX=1\r\n";                      //AT指令多连接模式
+   4          u8 *server="AT+CIPSERVER=1,8080\r\n";   //AT指令设置8080端口
+   5          
+   6          /********************************************************
+   7          ***********    函 数 名 ：SendData         **************
+   8          ***********    功 能    ：向ESP8266写入字符串  **********
+   9          *********************************************************/
+  10          void SendData(u8 *dat)  
+  11          {        
+  12   1              while(*dat != '\0')
+  13   1          {                
+  14   2                      SBUF = *dat;
+  15   2              while(!TI);
+  16   2              TI = 0;                   
+  17   2              dat++;                                   
+  18   2          }
+  19   1              delay1ms(300);                                                                          
+  20   1      }
+  21          
+  22          void SetPort()
+  23          {
+  24   1              SendData(mux);
+  25   1              SendData(server);
+  26   1      }
+  27          /********************************************************
+  28          ***********    函 数 名 ：UartConfiguration    **********
+  29          ***********    功 能    ：串口初始化           **********
+  30          *********************************************************/
+  31          void UartConfiguration()
+  32          {
+  33   1          TMOD=0x20;      
+  34   1              TH1=0xF3;               
+  35   1              TL1=0xF3;               
+  36   1              PCON=0x80;      
+  37   1              SCON=0x50;      
+  38   1              EA=1;             
+  39   1              ES=1;           
+  40   1              TR1=1;                  
+  41   1      }
+  42          /********************************************************
+  43          ***********    函 数 名 ：ESP8266_init         **********
+  44          ***********    功 能    ：ESP8266初始化        **********
+  45          *********************************************************/
+  46          void ESP8266_init()
+  47          {
+  48   1              UartConfiguration();
+  49   1              TI=0;          
+  50   1              SetPort();
+  51   1      }
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+C51 COMPILER V9.01   ESP8266                                                               06/03/2019 13:50:10 PAGE 2   
+
+   CODE SIZE        =     76    ----
+   CONSTANT SIZE    =     36    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =      6    ----
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

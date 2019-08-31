@@ -1,0 +1,89 @@
+C51 COMPILER V9.01   LED                                                                   06/03/2019 13:50:11 PAGE 1   
+
+
+C51 COMPILER V9.01, COMPILATION OF MODULE LED
+OBJECT MODULE PLACED IN ..\OBJ\LED.obj
+COMPILER INVOKED BY: D:\keil\C51\BIN\C51.EXE ..\HARDWARE\LED.c BROWSE INCDIR(..\HARDWARE;..\HARDWARE) DEBUG OBJECTEXTEND
+                    - PRINT(.\LED.lst) OBJECT(..\OBJ\LED.obj)
+
+line level    source
+
+   1          #include "LED.h"
+   2          
+   3          /*******************************************************
+   4          ***********   函 数 名 ：flow              *************
+   5          ***********   功 能    ：实现LED灯流水灯   *************
+   6          ********************************************************/
+   7          void flow(u8 i)
+   8          {
+   9   1              u8 j;
+  10   1              if(i==1)
+  11   1              {
+  12   2                      led=0xfe;
+  13   2                      delay1ms(400); //大约延时450ms  
+  14   2                      for(j=0;j<7;j++)         //将led左移一位
+  15   2                      {
+  16   3                              led=_crol_(led,1);
+  17   3                              
+  18   3                              if(i!=1){j=7;led=0xff;return;}
+  19   3                              delay1ms(400);
+  20   3                               //大约延时450ms        
+  21   3                      }
+  22   2                      for(j=0;j<7;j++)        //将led右移一位
+  23   2                      {
+  24   3                              led=_cror_(led,1);
+  25   3                              
+  26   3                              if(i!=1){j=7;led=0xff;return;}
+  27   3                               //大约延时450ms
+  28   3                              delay1ms(400);  
+  29   3                       }
+  30   2                       led=0xff;
+  31   2              }
+  32   1      }
+  33          /*******************************************************
+  34          ***********   函 数 名 ：light             *************
+  35          ***********   功 能    ：实现点亮LED灯     *************
+  36          ********************************************************/
+  37          void light(u8 i)
+  38          {
+  39   1              if(i==1)
+  40   1                      led&=0x00;
+  41   1      }
+  42          /*******************************************************
+  43          ***********   函 数 名 ：voice             *************
+  44          ***********   功 能    ：实现蜂鸣器叫      *************
+  45          ********************************************************/
+  46          void voice(u8 i)
+  47          {
+  48   1              u16 j=10000;
+  49   1              if(i==1)
+  50   1              {
+  51   2                      while(j--)
+  52   2                      {
+  53   3                              beep=~beep;
+  54   3                              delayus(10);
+C51 COMPILER V9.01   LED                                                                   06/03/2019 13:50:11 PAGE 2   
+
+  55   3                      }
+  56   2              }
+  57   1      }
+  58          
+  59          u8 exchange(u8 i)
+  60          {
+  61   1              if(i==0)  return 1;
+  62   1              else      return 0;
+  63   1      }
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =    155    ----
+   CONSTANT SIZE    =   ----    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =   ----       4
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

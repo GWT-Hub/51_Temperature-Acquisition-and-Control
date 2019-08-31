@@ -1,0 +1,166 @@
+C51 COMPILER V9.01   MAIN                                                                  06/03/2019 13:50:11 PAGE 1   
+
+
+C51 COMPILER V9.01, COMPILATION OF MODULE MAIN
+OBJECT MODULE PLACED IN ..\OBJ\main.obj
+COMPILER INVOKED BY: D:\keil\C51\BIN\C51.EXE main.c BROWSE INCDIR(..\HARDWARE) DEBUG OBJECTEXTEND OBJECT(..\OBJ\main.obj
+                    -)
+
+line level    source
+
+   1          #include "ESP8266.h"
+   2          #include "LCD1602.h"
+   3          #include "DS18B20.h"
+   4          #include "LED.h"
+   5          
+   6          u8 Display[20]=" Temp   ";          //LCD屏的显示
+   7          u8 receive[30];                                 //接受WIFI模块发送来的数据
+   8          
+   9          //存放等待发送给WiFi模块的温度数值
+  10          u8 num[10];                             
+  11          u8 i=0,j=0;
+  12          
+  13          //用于发送温度的给WIFI模块的AT指令
+  14          u8 *start="AT+CIPSTART=0,\"TCP\",\"192.168.4.2\",5000\r\n";
+  15          u8 *len="AT+CIPSEND=0,6\r\n";
+  16          
+  17          //用于判断手机端需要单片机执行的功能
+  18          static u8 btn1=0,btn2=0,btn3=0,btn4=0,btn5=0,btn6=0,btn7=0,btn8=0,btn9=0;
+  19          
+  20          /********************************************************
+  21          ***********    函 数 名 ：SendToPhone         ***********
+  22          ***********    功 能    ：发送温度值给WIFI模块  *********
+  23          *********************************************************/
+  24          void SendToPhone(u8 i)
+  25          {
+  26   1              if(i==1)
+  27   1              {
+  28   2                      u8 *dat;
+  29   2                      SendData(start);
+  30   2                      SendData(len);
+  31   2                      num[6]='\r';num[7]='\n';
+  32   2                      dat=num;
+  33   2                      SendData(dat);
+  34   2              }
+  35   1      }
+  36          /********************************************************
+  37          ********* 函 数 名 ：DataExchange                ********
+  38          ********* 功 能    ：转换温度数据并存放在数组中  ********
+  39          *********************************************************/
+  40          void DataExchange(int temp)                
+  41          {
+  42   1              float tp;  
+  43   1              if(temp< 0)                     
+  44   1              {
+  45   2                      Display[8] = '-'; 
+  46   2                      num[0] = Display[8];     
+  47   2                      temp=temp-1;
+  48   2                      temp=~temp;
+  49   2                      tp=temp;
+  50   2                      temp=tp*0.0625*100+0.5; 
+  51   2              }
+  52   1              else
+  53   1              {                       
+  54   2                      Display[8] = '+';
+C51 COMPILER V9.01   MAIN                                                                  06/03/2019 13:50:11 PAGE 2   
+
+  55   2                      num[0] = Display[8];
+  56   2                      tp=temp;
+  57   2                      temp=tp*0.0625*100+0.5; 
+  58   2              }
+  59   1              Display[9] = (temp % 10000 / 1000)+0x30;   num[1] = Display[9];
+  60   1              Display[10] = (temp % 1000 / 100)+0x30;    num[2] = Display[10];
+  61   1              Display[11] = '.';                                             num[3] = Display[11];
+  62   1              Display[12] = (temp % 100 / 10)+0x30;      num[4] = Display[12];
+  63   1              Display[13] = (temp % 10)+0x30;                    num[5] = Display[13];
+  64   1              Display[14] = 'C';
+  65   1      }
+  66          
+  67          void main()
+  68          {
+  69   1              ESP8266_init();                           //WIFI模块初始化      
+  70   1              while(1)
+  71   1              {  
+  72   2                      LcdInit();                        //LCD模块初始化
+  73   2                      DataExchange(Ds18b20ReadTemp());  //温度数据转换并存储
+  74   2                      for(i=0;i<15;i++)                                 //将数组的元素显示在LCD上
+  75   2                  {
+  76   3                              LcdWriteData(Display[i]);
+  77   3                              delay1ms(5);    
+  78   3              }
+  79   2                      delay1ms(1000);                                   //延时1秒
+  80   2      
+  81   2                      SendToPhone(btn1);                    //若btn1=1 则发送温度数据给WIFI模块
+  82   2                      voice(btn2);                                      //若btn2=1 则使蜂鸣器响起
+  83   2                      light(btn3);                                      //若btn3=1 则点亮全部LED等
+  84   2                      flow(btn4);                                               //若btn4=1 则实现流水灯模式
+  85   2              }
+  86   1      }
+  87           void Uart() interrupt 4
+  88          {
+  89   1         if(RI == 1)   
+  90   1              {
+  91   2              RI = 0;     
+  92   2                      receive[j]=SBUF;
+  93   2                      if(receive[0]=='+')     j++;
+  94   2                      else                    j=0;
+  95   2      
+  96   2                      if(j==10)
+  97   2                      {
+  98   3                              j=0;
+  99   3                              switch(receive[9])
+ 100   3                              {
+ 101   4                                      case '1':
+ 102   4                                              btn1=exchange(btn1);break;
+ 103   4                                      case '2':                 
+ 104   4                                              btn2=exchange(btn2);break;
+ 105   4                                      case '3':                   
+ 106   4                                              btn3=exchange(btn3);
+ 107   4                                              led1=1;led2=1;led3=1;led4=1;led5=1;
+ 108   4                                              break;
+ 109   4                                      case '4':                     
+ 110   4                                              btn4=exchange(btn4);
+ 111   4                                              led1=1;led2=1;led3=1;led4=1;led5=1;
+ 112   4                                              break;
+ 113   4                                      case '5':                    
+ 114   4                                              btn5=exchange(btn5);
+ 115   4                                              if(btn5==1)  led1=0;
+ 116   4                                              else         led1=1;
+C51 COMPILER V9.01   MAIN                                                                  06/03/2019 13:50:11 PAGE 3   
+
+ 117   4                                              break;
+ 118   4                                      case '6':                     
+ 119   4                                              btn6=exchange(btn6);
+ 120   4                                              if(btn6==1)  led2=0;
+ 121   4                                              else         led2=1;   break;
+ 122   4                                      case '7':                    
+ 123   4                                              btn7=exchange(btn7);
+ 124   4                                              if(btn7==1)  led3=0;
+ 125   4                                              else         led3=1;   break;
+ 126   4                                      case '8':                    
+ 127   4                                              btn8=exchange(btn8); 
+ 128   4                                              if(btn8==1)  led4=0;
+ 129   4                                              else         led4=1;   break;
+ 130   4                                      case '9':
+ 131   4                                              btn9=exchange(btn9);
+ 132   4                                              if(btn9==1)  led5=0;
+ 133   4                                              else         led5=1;    break;
+ 134   4                                      default:break;
+ 135   4                              }
+ 136   3                      }
+ 137   2              }       
+ 138   1      }
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =    613    ----
+   CONSTANT SIZE    =     58    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =     77       7
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)
